@@ -3,7 +3,7 @@ name: Release Build
 on:
   push:
     branches:
-      - my-features
+      - main
     paths-ignore:
       - '**.md'
       - '.github/**'
@@ -115,7 +115,7 @@ jobs:
           fi
           gh release create "$TAG" TMessagesProj/build/outputs/apk/release/*.apk \
             --target "$GITHUB_SHA" --prerelease --latest=false \
-            --title "exteraless CI $SHORT" --notes "$NOTES"
+            --title "QuarkGram CI $SHORT" --notes "$NOTES"
           gh release list --limit 100 --json tagName,isPrerelease,createdAt \
             -q '[.[] | select(.isPrerelease and (.tagName | startswith("ci-")))] | sort_by(.createdAt) | reverse | .[5:] | .[].tagName' |
             while read -r old; do
