@@ -52,7 +52,7 @@
     <string name="OEGeneralImportEtgDone">Ajustes importados: %1$d</string>
     <string name="OEGeneralResetSettings">Restablecer ajustes</string>
     <string name="OEGeneralResetSettingsInfo">Todos los ajustes volverán a sus valores predeterminados y la app se reiniciará.</string>
-    <string name="OEGeneralResetSettingsDone">Se restablecieron los ajustes de exteraless.</string>
+    <string name="OEGeneralResetSettingsDone">Se restablecieron los ajustes de QuarkGram.</string>
     <string name="OEGeneralDeleteAccount">Eliminar cuenta</string>
     <string name="DeepLFormalityDefault">Tono: como venga</string>
     <string name="DeepLFormalityInformal">Tono: informal</string>
@@ -94,7 +94,7 @@
     <string name="OEGeneralMapProvider">Proveedor de mapas</string>
     <string name="OEGeneralMapPreview">Vistas previas de ubicación</string>
     <string name="OEGeneralMapDriftingFix">Corregir el desplazamiento del mapa</string>
-    <string name="OECrashTitle">exteraless se cerró inesperadamente</string>
+    <string name="OECrashTitle">QuarkGram se cerró inesperadamente</string>
     <string name="OEGeneralNetworkHeader">Red</string>
     <string name="OEPrivacyFalseBottom">Doble fondo</string>
     <string name="OEPrivacyFalseBottomShowIn">Mostrar en %1$s</string>
@@ -129,7 +129,7 @@
     <string name="OEAyuSaveInArchivedInfo">También se guardan los mensajes eliminados y editados de los chats archivados.</string>
     <string name="OEAyuDatabaseExport">Exportar base de datos</string>
     <string name="OEAyuDatabaseImport">Importar base de datos</string>
-    <string name="OEAyuDatabaseImportInfo">Los mensajes eliminados y editados de este archivo se añadirán a los ya guardados. Se admiten exportaciones de exteraless y AyuGram. Es posible que los archivos multimedia de otra app no estén disponibles.</string>
+    <string name="OEAyuDatabaseImportInfo">Los mensajes eliminados y editados de este archivo se añadirán a los ya guardados. Se admiten exportaciones de QuarkGram y AyuGram. Es posible que los archivos multimedia de otra app no estén disponibles.</string>
     <string name="OEAyuDatabaseImportDone">Mensajes añadidos: %1$d</string>
     <string name="OEAyuDatabaseImportFailed">No se pudo importar este archivo</string>
     <string name="OEAyuRegexReversed">Inverso</string>

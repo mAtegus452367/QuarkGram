@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- exteraless: Python-плагины -->
+    <!-- QuarkGram: Python-плагины -->
     <string name="OpenExteraPlugins">Плагины</string>
     <string name="PluginsSafeMode">Безопасный режим</string>
     <string name="PluginsSafeModeEnabled">Безопасный режим включён. Подействует при следующем запуске.</string>

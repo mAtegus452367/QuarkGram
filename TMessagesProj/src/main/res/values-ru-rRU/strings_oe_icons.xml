@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- exteraless: паки иконок -->
+    <!-- QuarkGram: паки иконок -->
     <string name="IconPacks">Паки иконок</string>
     <string name="IconPacksInfo">Заменяет иконки приложения на иконки из установленного пака. Пак — это архив .icons с файлом metadata.json и картинками.</string>
     <string name="IconPacksHint">Нажмите на пак, чтобы включить или выключить его. Удерживайте, чтобы удалить. Паки выше в списке имеют приоритет.</string>

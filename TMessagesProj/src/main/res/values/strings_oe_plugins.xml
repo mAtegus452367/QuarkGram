@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- exteraless: Python-плагины -->
+    <!-- QuarkGram: Python-плагины -->
     <string name="OpenExteraPlugins">Plugins</string>
     <string name="PluginsSafeMode">Safe mode</string>
     <string name="PluginsSafeModeEnabled">Safe mode turned on. It takes effect on the next start.</string>
@@ -61,7 +61,7 @@
     <string name="PluginsNotFound">No plugins found</string>
     <string name="EnablePluginsEngine">Enable Plugins Engine</string>
     <string name="RestartRequired">Restart the app to apply</string>
-    <!-- exteraless: разрешения плагинов. Формулировка — последствие для человека,
+    <!-- QuarkGram: разрешения плагинов. Формулировка — последствие для человека,
          а не имя ключа: решение принимают по тому, что плагин сможет сделать. -->
     <string name="PluginPermissions">Permissions</string>
     <string name="PluginPermissionsHeader">Permissions</string>

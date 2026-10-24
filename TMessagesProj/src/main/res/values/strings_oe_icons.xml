@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- exteraless: Icon Packs (порт из exteraGram) -->
+    <!-- QuarkGram: Icon Packs (порт из exteraGram) -->
     <string name="IconPacks">Icon Packs</string>
     <string name="IconPacksInfo">Replace app icons with icons from an installed pack. Packs are .icons archives containing metadata.json and image files.</string>
     <string name="IconPacksHint">Tap a pack to enable or disable it. Hold to delete. Packs higher in the list take priority.</string>
