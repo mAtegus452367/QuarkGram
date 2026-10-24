@@ -348,8 +348,8 @@ public class Client {
                 .url(url)
                 .addHeader("Content-Type", "application/json")
                 .addHeader("Authorization", "Bearer " + service.getKey())
-                .addHeader("HTTP-Referer", "https://github.com/exteraless/exteraless")
-                .addHeader("X-Title", "exteraless")
+                .addHeader("HTTP-Referer", "https://github.com/mAtegus452367/QuarkGram")
+                .addHeader("X-Title", "QuarkGram")
                 .post(RequestBody.create(body.toString(), JSON))
                 .build();
     }

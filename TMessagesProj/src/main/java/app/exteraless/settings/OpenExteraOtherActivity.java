@@ -133,10 +133,11 @@ public class OpenExteraOtherActivity extends BaseNekoSettingsActivity {
         contentCaptureRow = addRow("contentCapture");
         googleDividerRow = addRow();
 
-        nagramHeaderRow = addRow("nagramHeader");
+        // QuarkGram: раздел AyuMoments скрыт.
+        nagramHeaderRow = -1;
         nagramSettingsRow = -1;
-        ayuMomentsRow = addRow("ayuMoments");
-        nagramDividerRow = addRow();
+        ayuMomentsRow = -1;
+        nagramDividerRow = -1;
 
         experimentalHeaderRow = addRow("experimentalHeader");
         localPremiumRow = addRow("localPremium");

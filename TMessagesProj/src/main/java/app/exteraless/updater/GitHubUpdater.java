@@ -44,7 +44,7 @@ import xyz.nextalone.nagram.NaConfig;
 
 public final class GitHubUpdater {
 
-    private static final String REPO = "exteraless/exteraless";
+    private static final String REPO = "mAtegus452367/QuarkGram";
     public static final String RELEASES_URL = "https://github.com/" + REPO + "/releases";
     private static final String API = "https://api.github.com/repos/" + REPO;
     private static final long AUTO_INTERVAL = TimeUnit.HOURS.toMillis(6);
@@ -183,7 +183,7 @@ public final class GitHubUpdater {
     private static JSONObject getJson(String url) throws Exception {
         Request request = new Request.Builder().url(url)
                 .header("Accept", "application/vnd.github+json")
-                .header("User-Agent", "exteraless")
+                .header("User-Agent", "QuarkGram")
                 .build();
         try (Response response = client().newCall(request).execute()) {
             ResponseBody body = response.body();
@@ -379,7 +379,7 @@ public final class GitHubUpdater {
         }
         File target = new File(dir, release.apkName.replaceAll("[^A-Za-z0-9._-]", "_"));
         Call call = client().newCall(new Request.Builder().url(release.apkUrl)
-                .header("User-Agent", "exteraless").build());
+                .header("User-Agent", "QuarkGram").build());
         download = call;
         new Thread(() -> {
             boolean ok = false;

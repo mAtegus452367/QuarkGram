@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="assets/logo.png" width="128" alt="exteraless">
+<img src="assets/logo.png" width="128" alt="QuarkGram">
 
-# exteraless
+# QuarkGram
 
-Открытая версия exteraGram — с моделью разрешений для плагинов
+Независимый клиент Telegram для Android на основе exteraless
 
-[![Канал](https://img.shields.io/badge/Telegram-@exteraless-2CA5E0?logo=telegram&logoColor=white)](https://t.me/exteraless)
+[![Канал](https://img.shields.io/badge/Telegram-@quarkgram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/quarkgram)
 
 </div>
 
@@ -14,15 +14,16 @@
 
 ## Что это
 
-exteraless — форк [NagramX](https://github.com/risin42/NagramX), в котором возможности
-exteraGram реализованы с открытым исходным кодом.
+QuarkGram — отдельный клиент, развивающийся как форк [exteraless](https://github.com/exteraless/exteraless)
+(который, в свою очередь, основан на [NagramX](https://github.com/risin42/NagramX)). Благодарим авторов
+исходных проектов; код распространяется на условиях исходной лицензии.
 
 Отдельный упор — **безопасность плагинов**. В exteraGram плагин не ограничен ни в чём;
 здесь у него есть модель разрешений: плагин объявляет, что ему нужно, это
 видно на экране установки, и получает он только заявленное.
 
 Проект **в бете**: часть возможностей exteraGram ещё не перенесена. Если заметили, что
-каких-то функций не хватает, — откройте issue или напишите в [канал](https://t.me/exteraless?direct).
+каких-то функций не хватает, — откройте issue или напишите в [канал](https://t.me/quarkgram).
 
 * Имя пакета: `com.exteraless.app`
 * Что перенесено: экраны настроек, оформление и параметры чатов, иконпаки, полоса
@@ -30,15 +31,16 @@ exteraGram реализованы с открытым исходным кодо�
 
 ### Ссылки
 
-* Канал: [@exteraless](https://t.me/exteraless)
-* Исходники: [github.com/exteraless/exteraless](https://github.com/exteraless/exteraless)
+* Канал: [@quarkgram](https://t.me/quarkgram)
+* Исходники: [github.com/mAtegus452367/QuarkGram](https://github.com/mAtegus452367/QuarkGram)
+* Основа: [exteraless](https://github.com/exteraless/exteraless)
 
 ### Сборка
 
 1. Склонировать репозиторий вместе с подмодулями:
 
     ```bash
-    git clone --recursive --shallow-submodules https://github.com/exteraless/exteraless.git exteraless
+    git clone --recursive --shallow-submodules https://github.com/mAtegus452367/QuarkGram.git QuarkGram
     ```
 
     Если репозиторий уже склонирован без подмодулей:
@@ -123,15 +125,17 @@ Python 3.12 лишь под них, и на `armeabi-v7a` конфигураци
 
 ### What this is
 
-exteraless is a fork of [NagramX](https://github.com/risin42/NagramX) that implements
-exteraGram's features open-source.
+QuarkGram is a standalone Telegram client for Android, developed as a fork of
+[exteraless](https://github.com/exteraless/exteraless) (itself based on
+[NagramX](https://github.com/risin42/NagramX)). Thanks to the authors of the upstream projects;
+the code is distributed under the original license.
 
 The special focus is **plugin security**. In exteraGram a plugin is not restricted in
 any way; here it comes with a permission model and isolation: a plugin declares what it
 needs, you see that on the install sheet, and it gets only what was declared.
 
 The project is **in beta**: some exteraGram features have not been ported yet. If you
-notice a missing feature, open an issue or write to the [channel](https://t.me/exteraless?direct).
+notice a missing feature, open an issue or write to the [channel](https://t.me/quarkgram).
 
 * Package name: `com.exteraless.app`
 
@@ -146,7 +150,7 @@ studio. Rights to those materials belong to their authors.
 1. Clone with submodules:
 
     ```bash
-    git clone --recursive --shallow-submodules https://github.com/exteraless/exteraless.git exteraless
+    git clone --recursive --shallow-submodules https://github.com/mAtegus452367/QuarkGram.git QuarkGram
     ```
 
 2. Get `TELEGRAM_APP_ID` and `TELEGRAM_APP_HASH` from [my.telegram.org](https://my.telegram.org/auth)

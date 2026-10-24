@@ -452,7 +452,6 @@ public class SettingsHelper {
         exteralessFragments.add(new OpenExteraChatsActivity(OpenExteraChatsActivity.SCREEN_MEDIA));
         exteralessFragments.add(new OpenExteraChatsActivity(OpenExteraChatsActivity.SCREEN_HIDING));
         exteralessFragments.add(new OpenExteraOtherActivity());
-        exteralessFragments.add(new OpenExteraAyuMomentsActivity());
         exteralessFragments.add(new PillStackSettingsActivity());
         exteralessFragments.add(new AiSettingsActivity());
 

@@ -1473,7 +1473,7 @@ public class LocaleController {
         try {
             return ApplicationLoader.applicationContext.getString(R.string.OpenExtera);
         } catch (Exception ignore) {
-            return "exteraless";
+            return "QuarkGram";
         }
     }
 
