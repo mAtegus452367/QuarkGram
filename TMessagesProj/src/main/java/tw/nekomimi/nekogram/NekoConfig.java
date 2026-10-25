@@ -327,6 +327,7 @@ public class NekoConfig {
     }
 
     public static void setGhostMode(boolean enabled) {
+        if (true) return; // QuarkGram: режим призрака удалён
         for (Pair<ConfigItem, ConfigItem> pair : ghostToggleItems) {
             ConfigItem item = pair.first;
             ConfigItem lockedItem = pair.second;
@@ -338,6 +339,7 @@ public class NekoConfig {
     }
 
     public static void toggleGhostMode() {
+        if (true) return; // QuarkGram: режим призрака удалён
         boolean newState = !isGhostModeActive();
         setGhostMode(newState);
 

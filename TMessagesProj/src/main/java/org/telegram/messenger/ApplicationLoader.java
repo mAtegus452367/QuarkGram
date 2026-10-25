@@ -286,6 +286,7 @@ public class ApplicationLoader extends Application implements CameraXConfig.Prov
         SharedConfig.loadConfig();
         NekoConfig.init();
         NaConfig.init();
+        app.exteraless.AyuRemoval.apply();
         OpenExteraConfig.init();
         app.exteraless.icons.IconPacksConfig.init();
         app.exteraless.pillstack.PillStackConfig.init();

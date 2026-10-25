@@ -158,6 +158,7 @@ public class AyuGhostUtils {
     }
 
     public static InterceptResult interceptRequest(TLObject object, RequestDelegate onCompleteOrig) {
+        if (true) return InterceptResult.Proceed(onCompleteOrig); // QuarkGram: режим призрака удалён
         if (bypassed.remove(object)) {
             return InterceptResult.Proceed(onCompleteOrig);
         }

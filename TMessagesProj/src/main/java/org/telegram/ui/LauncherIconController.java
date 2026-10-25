@@ -46,8 +46,6 @@ public class LauncherIconController {
                 R.drawable.red_icon_foreground, R.string.AppIconRed),
         NYA("NyaIcon", R.drawable.nya_icon_background,
                 R.drawable.nya_icon_foreground, R.string.AppIconNya),
-        AYU("AyuIcon", R.drawable.ayu_icon_background,
-                R.drawable.ayu_icon_foreground, R.string.AppIconAyu),
         QUACK("QuackIcon", R.drawable.quack_icon_background,
                 R.drawable.quack_icon_foreground, R.string.AppIconQuack),
         GO("GoIcon", R.drawable.go_icon_background,

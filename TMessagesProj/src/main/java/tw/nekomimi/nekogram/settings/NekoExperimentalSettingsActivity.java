@@ -220,7 +220,8 @@ public class NekoExperimentalSettingsActivity extends BaseNekoXSettingsActivity 
                 enableSaveEditsHistoryRow, messageSavingSaveMediaRow, saveDeletedInPrivateChatsRow,
                 saveDeletedInGroupsRow, saveDeletedInChannelsRow, saveDeletedMessageForBotsUserRow,
                 saveDeletedMessageInBotChatRow, replyToDeletedAsQuoteRow, translucentDeletedMessagesRow,
-                useDeletedIconRow, customDeletedMarkRow, hideFromHeaderRow));
+                useDeletedIconRow, customDeletedMarkRow, hideFromHeaderRow,
+                headerAyuMoments, clearMessageDatabaseRow, dividerAyuMoments));
         addRowsToMap(cellGroup);
     }
 

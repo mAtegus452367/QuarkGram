@@ -105,10 +105,6 @@ public class PillRegistry {
                 R.drawable.drawer_proxy_on,
                 IconBackgroundColors.GREEN.top, IconBackgroundColors.GREEN.bottom,
                 ProxyPill::new));
-        register(new PillInfo(PillType.GHOST.id, LocaleController.getString(R.string.GhostMode),
-                R.drawable.ayu_ghost,
-                IconBackgroundColors.PURPLE.top, IconBackgroundColors.PURPLE.bottom,
-                GhostPill::new));
         register(new PillInfo(PillType.LAST_SEEN.id, LocaleController.getString(R.string.PillStackLastSeen),
                 R.drawable.msg_online,
                 IconBackgroundColors.GREEN.top, IconBackgroundColors.GREEN.bottom,

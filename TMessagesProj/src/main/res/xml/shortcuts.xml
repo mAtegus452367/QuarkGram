@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
     <shortcut
-        android:shortcutId="quick_ghost_mode"
-        android:enabled="true"
-        android:icon="@drawable/shortcut_ghost_mode"
-        android:shortcutShortLabel="@string/GhostMode"
-        android:shortcutLongLabel="@string/GhostMode">
-        <intent
-            android:action="app.exteraless.action.TOGGLE_GHOST_MODE"
-            android:targetPackage="com.exteraless.app"
-            android:targetClass="app.exteraless.shortcuts.QuickToggleActivity" />
-    </shortcut>
-
-    <shortcut
         android:shortcutId="quick_safe_mode"
         android:enabled="true"
         android:icon="@drawable/shortcut_safe_mode"

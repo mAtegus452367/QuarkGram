@@ -319,9 +319,7 @@ public final class MainMenuHelper {
                 return new MenuItemInfo(R.drawable.msg_qrcode, LocaleController.getString(R.string.AuthAnotherClient),
                         () -> openQrScanner(fragment), null);
             case GHOST_MODE:
-                return new MenuItemInfo(R.drawable.ayu_ghost, ghostModeTitle(),
-                        () -> toggleGhostMode(fragment, currentAccount),
-                        () -> fragment.presentFragment(new GhostModeActivity()));
+                return null;
             case RECENT_CHATS:
                 return new MenuItemInfo(R.drawable.menu_recent, LocaleController.getString(R.string.RecentChats),
                         () -> showRecentChats(fragment, currentAccount), null);
@@ -476,7 +474,7 @@ public final class MainMenuHelper {
             case BROWSER -> new MenuItemInfo(R.drawable.msg2_language, LocaleController.getString(R.string.BrowserSettingsTitle), null, null);
             case PLUGINS -> new MenuItemInfo(R.drawable.msg_plugins, LocaleController.getString(R.string.OpenExteraPlugins), null, null);
             case QR -> new MenuItemInfo(R.drawable.msg_qrcode, LocaleController.getString(R.string.AuthAnotherClient), null, null);
-            case GHOST_MODE -> new MenuItemInfo(R.drawable.ayu_ghost, ghostModeTitle(), null, null);
+            case GHOST_MODE -> null;
             case RECENT_CHATS -> new MenuItemInfo(R.drawable.menu_recent, LocaleController.getString(R.string.RecentChats), null, null);
             case WALLET -> isWalletAvailable(UserConfig.selectedAccount)
                     ? new MenuItemInfo(R.drawable.ic_gram, LocaleController.getString(R.string.WalletTitle), null, null)
