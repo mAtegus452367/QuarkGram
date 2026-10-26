@@ -1,12 +1,18 @@
 <div align="center">
 
-<img src="assets/logo.png" width="128" alt="QuarkGram">
+<img src="assets/logo.png" width="160" alt="QuarkGram">
 
 # QuarkGram
 
-Независимый клиент Telegram для Android на основе exteraless
+**Независимый клиент Telegram для Android**
+с гибкой настройкой, плагинами на Python и контролем разрешений
 
-[![Канал](https://img.shields.io/badge/Telegram-@quarkgram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/quarkgram)
+[![Канал](https://img.shields.io/badge/Telegram-@quarkgram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/quarkgram)
+[![Android](https://img.shields.io/badge/Android-arm64--v8a%20%7C%20x86__64-3DDC84?style=for-the-badge&logo=android&logoColor=white)](#сборка)
+[![Лицензия](https://img.shields.io/badge/license-GPLv3-blue?style=for-the-badge)](LICENSE)
+[![Сборка](https://img.shields.io/github/actions/workflow/status/mAtegus452367/QuarkGram/release.yml?style=for-the-badge&label=build)](https://github.com/mAtegus452367/QuarkGram/actions)
+
+[Что это](#что-это) · [Возможности](#возможности) · [Сборка](#сборка) · [Благодарности](#благодарности) · [English](#english)
 
 </div>
 
@@ -14,50 +20,73 @@
 
 ## Что это
 
-QuarkGram — отдельный клиент, развивающийся как форк [exteraless](https://github.com/exteraless/exteraless)
-(который, в свою очередь, основан на [NagramX](https://github.com/risin42/NagramX)). Благодарим авторов
-исходных проектов; код распространяется на условиях исходной лицензии.
+QuarkGram развивается как форк [exteraless](https://github.com/exteraless/exteraless), а тот,
+в свою очередь, основан на [NagramX](https://github.com/risin42/NagramX). Это отдельный клиент
+со своим названием, иконкой, каналом и репозиторием обновлений.
 
-Отдельный упор — **безопасность плагинов**. В exteraGram плагин не ограничен ни в чём;
-здесь у него есть модель разрешений: плагин объявляет, что ему нужно, это
-видно на экране установки, и получает он только заявленное.
+> [!NOTE]
+> Проект в **бете**. Часть возможностей исходных проектов ещё не перенесена или может
+> работать нестабильно. Нашли проблему или не хватает функции — откройте issue или напишите в
+> [канал](https://t.me/quarkgram).
 
-Проект **в бете**: часть возможностей exteraGram ещё не перенесена. Если заметили, что
-каких-то функций не хватает, — откройте issue или напишите в [канал](https://t.me/quarkgram).
+## Возможности
 
-* Имя пакета: `com.exteraless.app`
-* Что перенесено: экраны настроек, оформление и параметры чатов, иконпаки, полоса
-  пилюль (Pill Stack), боковое меню, движок Python-плагинов
+| | |
+|---|---|
+| 🧩 **Плагины на Python** | Движок плагинов с моделью разрешений: плагин заранее объявляет, что ему нужно, это видно на экране установки, и он получает только заявленное |
+| 🎨 **Оформление** | Подробные настройки внешнего вида и чатов, наборы иконок, выбор иконки приложения |
+| 💊 **Pill Stack** | Полоса «пилюль» с быстрыми действиями |
+| ☰ **Боковое меню** | Настраиваемый состав и порядок пунктов |
+| ⚙️ **Экраны настроек** | Параметры чатов, интерфейса и поведения приложения |
+
+### Чем QuarkGram отличается от exteraless
+
+- Свои название, иконка и оформление страницы проекта.
+- Убраны AyuMoments и режим призрака: ни в интерфейсе, ни в работе приложения их больше нет.
+- Обновления проверяются в [этом репозитории](https://github.com/mAtegus452367/QuarkGram/releases),
+  а не в репозитории exteraless.
+- Свой канал: [@quarkgram](https://t.me/quarkgram).
 
 ### Ссылки
 
-* Канал: [@quarkgram](https://t.me/quarkgram)
-* Исходники: [github.com/mAtegus452367/QuarkGram](https://github.com/mAtegus452367/QuarkGram)
-* Основа: [exteraless](https://github.com/exteraless/exteraless)
+- 📢 Канал: [@quarkgram](https://t.me/quarkgram)
+- 💻 Исходники: [github.com/mAtegus452367/QuarkGram](https://github.com/mAtegus452367/QuarkGram)
+- 🌱 Основа: [exteraless](https://github.com/exteraless/exteraless)
 
-### Сборка
+> [!WARNING]
+> Имя пакета пока остаётся `com.exteraless.app`. Из-за этого QuarkGram нельзя установить
+> одновременно с exteraless, а при другой подписи нужно сначала удалить старую версию.
 
-1. Склонировать репозиторий вместе с подмодулями:
+---
 
-    ```bash
-    git clone --recursive --shallow-submodules https://github.com/mAtegus452367/QuarkGram.git QuarkGram
-    ```
+## Сборка
 
-    Если репозиторий уже склонирован без подмодулей:
+### Быстрый старт
 
-    ```bash
-    git submodule update --init --recursive --depth=1
-    ```
+1. **Склонируйте репозиторий вместе с подмодулями:**
 
-2. Получить `TELEGRAM_APP_ID` и `TELEGRAM_APP_HASH` на [my.telegram.org](https://my.telegram.org/auth)
-   и создать `local.properties` в корне проекта:
+   ```bash
+   git clone --recursive --shallow-submodules https://github.com/mAtegus452367/QuarkGram.git QuarkGram
+   ```
+
+   Если репозиторий уже склонирован без подмодулей:
+
+   ```bash
+   git submodule update --init --recursive --depth=1
+   ```
+
+2. **Получите ключи Telegram API** на [my.telegram.org](https://my.telegram.org/auth) и создайте
+   `local.properties` в корне проекта:
 
    ```properties
    TELEGRAM_APP_ID=<ваш_app_id>
    TELEGRAM_APP_HASH=<ваш_app_hash>
    ```
 
-3. Для подписи APK положить свой `TMessagesProj/release.keystore` и дописать в `local.properties`:
+   > Не публикуйте `local.properties` и не коммитьте его: в нём ваш `api_hash`.
+
+3. **Подпись APK (необязательно).** Положите свой `TMessagesProj/release.keystore` и допишите
+   в `local.properties`:
 
    ```properties
    KEYSTORE_PASS=<пароль_хранилища>
@@ -65,102 +94,137 @@ QuarkGram — отдельный клиент, развивающийся как
    ALIAS_PASS=<пароль_ключа>
    ```
 
-   Ключа в репозитории нет намеренно. Без него сборка не падает — APK подписывается
+   Ключа в репозитории нет намеренно. Без него сборка не падает: APK подписывается
    отладочным ключом Android.
 
-4. Для push-уведомлений положить свой `TMessagesProj/google-services.json`
+4. **Push-уведомления (необязательно).** Положите свой `TMessagesProj/google-services.json`
    (Firebase, имя пакета `com.exteraless.app`).
 
-5. Заменить метаданные проекта:
+5. **Метаданные проекта (необязательно):**
 
-    - ключ Google Maps в записи `com.google.android.maps.v2.API_KEY` в `TMessagesProj/src/main/AndroidManifest.xml`;
-    - `BaseRemoteHelper.CHANNEL_METADATA_ID` — числовой id вашего канала метаданных, без префикса `-100`.
+   - ключ Google Maps в записи `com.google.android.maps.v2.API_KEY` в
+     `TMessagesProj/src/main/AndroidManifest.xml`;
+   - `BaseRemoteHelper.CHANNEL_METADATA_ID` — числовой id вашего канала метаданных, без
+     префикса `-100`.
 
-6. Собрать: `./gradlew :TMessagesProj:assembleDebug` или открыть проект в Android Studio.
+6. **Соберите:**
 
-**Про ABI.** Собираются только 64-битные `arm64-v8a` и `x86_64`: Chaquopy собирает
-Python 3.12 лишь под них, и на `armeabi-v7a` конфигурация обрывается. Переменная
-`NATIVE_TARGET` задаёт цель: `arm64-v8a` (один ABI, быстрее), `universal` (оба),
-`SKIP` (без нативной части — только Java и ресурсы).
+   ```bash
+   ./gradlew :TMessagesProj:assembleDebug
+   ```
+
+   Или откройте проект в Android Studio.
+
+<details>
+<summary><b>Про ABI и переменную NATIVE_TARGET</b></summary>
+
+<br>
+
+Собираются только 64-битные `arm64-v8a` и `x86_64`: Chaquopy собирает Python 3.12 лишь под
+них, и на `armeabi-v7a` конфигурация обрывается. Переменная `NATIVE_TARGET` задаёт цель:
+
+| Значение | Что собирается |
+|---|---|
+| `arm64-v8a` | один ABI, быстрее всего |
+| `universal` | оба ABI |
+| `SKIP` | без нативной части, только Java и ресурсы |
+
+</details>
 
 ### Сборка через GitHub Actions
 
-Нужны два секрета репозитория:
+Нужны два секрета репозитория (Settings → Secrets and variables → Actions):
 
-* `LOCAL_PROPERTIES` — содержимое `local.properties` в base64:
+| Секрет | Что в нём | Как получить |
+|---|---|---|
+| `LOCAL_PROPERTIES` | содержимое `local.properties` в base64 | `base64 -w0 local.properties` |
+| `RELEASE_KEYSTORE` | файл ключа в base64 (необязательно) | `base64 -w0 TMessagesProj/release.keystore` |
 
-  ```bash
-  base64 -w0 local.properties
-  ```
+Затем запустите workflow **Release Build** (Actions → Release Build → Run workflow). Готовый
+APK лежит в артефактах прогона. Без `RELEASE_KEYSTORE` сборка подпишется отладочным ключом.
 
-* `RELEASE_KEYSTORE` — файл ключа в base64:
+---
 
-  ```bash
-  base64 -w0 TMessagesProj/release.keystore
-  ```
-
-Дальше запустить workflow **Release Build**. Готовый APK лежит в артефактах прогона.
-
-### Авторы дизайна
+## Авторы дизайна
 
 Иконки и оформление, унаследованные от exteraGram, созданы его дизайнером —
 [@the8055u](https://t.me/the8055u) и студией [@BlueprintDsgn](https://t.me/BlueprintDsgn).
 Права на эти материалы принадлежат авторам.
 
-### Благодарности
+## Благодарности
 
-- [AyuGram](https://github.com/AyuGram/AyuGram4A)
-- [Cherrygram](https://github.com/arsLan4k1390/Cherrygram)
-- [Dr4iv3rNope](https://github.com/Dr4iv3rNope/NotSoAndroidAyuGram)
+QuarkGram стоит на плечах этих проектов:
+
+- [exteraless](https://github.com/exteraless/exteraless)
 - [exteraGram](https://github.com/exteraSquad/exteraGram)
-- [Inugram](https://github.com/teidesu/inugram)
-- [Nagram](https://github.com/NextAlone/Nagram)
-- [NagramX](https://github.com/risin42/NagramX)
+- [NagramX](https://github.com/risin42/NagramX) и [Nagram](https://github.com/NextAlone/Nagram)
 - [Nekogram](https://github.com/Nekogram/Nekogram)
+- [Cherrygram](https://github.com/arsLan4k1390/Cherrygram)
 - [OctoGram](https://github.com/OctoGramApp/OctoGram)
+- [Inugram](https://github.com/teidesu/inugram)
+- [AyuGram](https://github.com/AyuGram/AyuGram4A) и [Dr4iv3rNope](https://github.com/Dr4iv3rNope/NotSoAndroidAyuGram)
+- [Telegram для Android](https://github.com/DrKLO/Telegram)
+
+## Лицензия
+
+Исходный код распространяется на условиях [GNU GPL v3](LICENSE), как и проекты, на которых он основан.
 
 ---
 
 ## English
 
+<details>
+<summary><b>Show English version</b></summary>
+
+<br>
+
 ### What this is
 
 QuarkGram is a standalone Telegram client for Android, developed as a fork of
-[exteraless](https://github.com/exteraless/exteraless) (itself based on
-[NagramX](https://github.com/risin42/NagramX)). Thanks to the authors of the upstream projects;
-the code is distributed under the original license.
+[exteraless](https://github.com/exteraless/exteraless), which is itself based on
+[NagramX](https://github.com/risin42/NagramX). It has its own name, icon, channel and update
+repository.
 
-The special focus is **plugin security**. In exteraGram a plugin is not restricted in
-any way; here it comes with a permission model and isolation: a plugin declares what it
-needs, you see that on the install sheet, and it gets only what was declared.
+> [!NOTE]
+> The project is in **beta**. Some features of the upstream projects have not been ported
+> yet or may be unstable. If you find a problem or miss a feature, open an issue or write to
+> the [channel](https://t.me/quarkgram).
 
-The project is **in beta**: some exteraGram features have not been ported yet. If you
-notice a missing feature, open an issue or write to the [channel](https://t.me/quarkgram).
+### Highlights
 
-* Package name: `com.exteraless.app`
+- **Python plugins** with a permission model: a plugin declares what it needs, you see that
+  on the install sheet, and it gets only what was declared.
+- **Appearance and chat settings**, icon packs, selectable app icon.
+- **Pill Stack** with quick actions and a **customizable side menu**.
 
-### Design credits
+### How it differs from exteraless
 
-Icons and visual design inherited from exteraGram are the work of its designer,
-[@the8055u](https://t.me/the8055u), and the [@BlueprintDsgn](https://t.me/BlueprintDsgn)
-studio. Rights to those materials belong to their authors.
+- Its own name, icon and project page.
+- AyuMoments and ghost mode are removed.
+- Updates are checked in [this repository](https://github.com/mAtegus452367/QuarkGram/releases),
+  not in exteraless's.
+- Own channel: [@quarkgram](https://t.me/quarkgram).
+
+> [!WARNING]
+> The package name is still `com.exteraless.app`, so QuarkGram cannot be installed alongside
+> exteraless, and if the signature differs you must uninstall the old version first.
 
 ### Building
 
 1. Clone with submodules:
 
-    ```bash
-    git clone --recursive --shallow-submodules https://github.com/mAtegus452367/QuarkGram.git QuarkGram
-    ```
+   ```bash
+   git clone --recursive --shallow-submodules https://github.com/mAtegus452367/QuarkGram.git QuarkGram
+   ```
 
 2. Get `TELEGRAM_APP_ID` and `TELEGRAM_APP_HASH` from [my.telegram.org](https://my.telegram.org/auth)
-   and put them into `local.properties` in the project root.
+   and put them into `local.properties` in the project root. Never commit this file.
 
-3. For release signing, drop your own `TMessagesProj/release.keystore` and add
-   `KEYSTORE_PASS`, `ALIAS_NAME`, `ALIAS_PASS` to `local.properties`. No keystore is
-   shipped with the repository; without one the build is signed with the Android debug key.
+3. Optional release signing: drop your own `TMessagesProj/release.keystore` and add
+   `KEYSTORE_PASS`, `ALIAS_NAME`, `ALIAS_PASS` to `local.properties`. Without a keystore the
+   build is signed with the Android debug key.
 
-4. For push notifications, replace `TMessagesProj/google-services.json` with your own
+4. Optional push notifications: replace `TMessagesProj/google-services.json` with your own
    Firebase config for `com.exteraless.app`.
 
 5. Build with `./gradlew :TMessagesProj:assembleDebug` or from Android Studio.
@@ -169,6 +233,18 @@ Only 64-bit ABIs are built (`arm64-v8a`, `x86_64`): Chaquopy ships Python 3.12 f
 only, and `armeabi-v7a` fails at configuration time. `NATIVE_TARGET` selects the target:
 `arm64-v8a`, `universal` (both) or `SKIP` (no native part).
 
-For CI, set two repository secrets — `LOCAL_PROPERTIES` and `RELEASE_KEYSTORE`, both
-base64-encoded — and run the **Release Build** workflow. The APK ends up in the run
-artifacts.
+**GitHub Actions.** Set the repository secrets `LOCAL_PROPERTIES` and (optionally)
+`RELEASE_KEYSTORE`, both base64-encoded, then run the **Release Build** workflow. The APK ends
+up in the run artifacts.
+
+### Design credits
+
+Icons and visual design inherited from exteraGram are the work of its designer,
+[@the8055u](https://t.me/the8055u), and the [@BlueprintDsgn](https://t.me/BlueprintDsgn)
+studio. Rights to those materials belong to their authors.
+
+### License
+
+Distributed under the [GNU GPL v3](LICENSE), like the projects it is based on.
+
+</details>
