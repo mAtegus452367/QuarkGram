@@ -21,8 +21,7 @@
 ## Что это
 
 QuarkGram развивается как форк [exteraless](https://github.com/exteraless/exteraless), а тот,
-в свою очередь, основан на [NagramX](https://github.com/risin42/NagramX). Это отдельный клиент
-со своим названием, иконкой, каналом и репозиторием обновлений.
+в свою очередь, основан на [NagramX](https://github.com/risin42/NagramX).
 
 > [!NOTE]
 > Проект в **бете**. Часть возможностей исходных проектов ещё не перенесена или может
@@ -38,14 +37,6 @@ QuarkGram развивается как форк [exteraless](https://github.com
 | 💊 **Pill Stack** | Полоса «пилюль» с быстрыми действиями |
 | ☰ **Боковое меню** | Настраиваемый состав и порядок пунктов |
 | ⚙️ **Экраны настроек** | Параметры чатов, интерфейса и поведения приложения |
-
-### Чем QuarkGram отличается от exteraless
-
-- Свои название, иконка и оформление страницы проекта.
-- Убраны AyuMoments и режим призрака: ни в интерфейсе, ни в работе приложения их больше нет.
-- Обновления проверяются в [этом репозитории](https://github.com/mAtegus452367/QuarkGram/releases),
-  а не в репозитории exteraless.
-- Свой канал: [@quarkgram](https://t.me/quarkgram).
 
 ### Ссылки
 
@@ -182,8 +173,7 @@ QuarkGram стоит на плечах этих проектов:
 
 QuarkGram is a standalone Telegram client for Android, developed as a fork of
 [exteraless](https://github.com/exteraless/exteraless), which is itself based on
-[NagramX](https://github.com/risin42/NagramX). It has its own name, icon, channel and update
-repository.
+[NagramX](https://github.com/risin42/NagramX).
 
 > [!NOTE]
 > The project is in **beta**. Some features of the upstream projects have not been ported
@@ -196,14 +186,6 @@ repository.
   on the install sheet, and it gets only what was declared.
 - **Appearance and chat settings**, icon packs, selectable app icon.
 - **Pill Stack** with quick actions and a **customizable side menu**.
-
-### How it differs from exteraless
-
-- Its own name, icon and project page.
-- AyuMoments and ghost mode are removed.
-- Updates are checked in [this repository](https://github.com/mAtegus452367/QuarkGram/releases),
-  not in exteraless's.
-- Own channel: [@quarkgram](https://t.me/quarkgram).
 
 > [!WARNING]
 > The package name is still `com.exteraless.app`, so QuarkGram cannot be installed alongside
