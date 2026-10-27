@@ -91,7 +91,6 @@ public class OpenExteraSettingsActivity extends BaseNekoSettingsActivity {
         if (actionBar != null) {
             final org.telegram.ui.ActionBar.ActionBarMenu menu = actionBar.createMenu();
             menu.addItem(MENU_SEARCH, R.drawable.outline_header_search, getResourceProvider());
-            menu.addItem(MENU_CLOUD, R.drawable.cloud_sync, getResourceProvider());
             actionBar.setActionBarMenuOnItemClick(new org.telegram.ui.ActionBar.ActionBar.ActionBarMenuOnItemClick() {
                 @Override
                 public void onItemClick(int id) {

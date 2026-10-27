@@ -41,6 +41,13 @@ public class CloudStorageHelper extends AccountInstance {
     }
 
     private void invokeWebViewCustomMethod(String method, String data, boolean searchUser, Utilities.Callback2<String, String> callback) {
+        // QuarkGram: облако работало через бота exteraless, поэтому отключено: данные на чужой сервер не уходят.
+        if (true) {
+            if (callback != null) {
+                callback.run(null, "CLOUD_DISABLED");
+            }
+            return;
+        }
         TLRPC.User user = getMessagesController().getUser(WEBVIEW_BOT_ID);
         if (user == null) {
             if (searchUser) {

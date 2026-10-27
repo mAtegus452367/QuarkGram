@@ -69,7 +69,7 @@ public final class PluginsBackup {
             return null;
         }
         String stamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm", Locale.US).format(new Date());
-        File out = new File(AndroidUtilities.getCacheDir(), "exteraless-" + stamp + EXTENSION);
+        File out = new File(AndroidUtilities.getCacheDir(), "quarkgram-" + stamp + EXTENSION);
         try (ZipOutputStream zip = new ZipOutputStream(new FileOutputStream(out))) {
             JSONArray list = new JSONArray();
             for (int i = 0; i < plugins.size(); i++) {

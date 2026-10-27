@@ -92,7 +92,6 @@ public class NekoSettingsActivity extends BaseNekoSettingsActivity {
 
         ActionBarMenu menu = actionBar.createMenu();
         menu.addItem(MENU_SEARCH, R.drawable.outline_header_search, resourcesProvider);
-        menu.addItem(MENU_SYNC, R.drawable.cloud_sync, resourcesProvider);
 
         actionBar.setActionBarMenuOnItemClick(new ActionBar.ActionBarMenuOnItemClick() {
             @Override

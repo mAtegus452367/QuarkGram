@@ -206,7 +206,8 @@ public final class GitHubUpdater {
         }
         for (int i = 0; i < releases.length(); i++) {
             JSONObject item = releases.optJSONObject(i);
-            if (item == null || item.optBoolean("draft") || item.optBoolean("prerelease") && !prerelease) {
+            // QuarkGram: workflow публикует сборки только как pre-release, поэтому их не отфильтровываем.
+            if (item == null || item.optBoolean("draft")) {
                 continue;
             }
             JSONObject asset = pickAsset(item.optJSONArray("assets"));
