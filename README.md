@@ -44,10 +44,6 @@ QuarkGram развивается как форк [exteraless](https://github.com
 - 💻 Исходники: [github.com/mAtegus452367/QuarkGram](https://github.com/mAtegus452367/QuarkGram)
 - 🌱 Основа: [exteraless](https://github.com/exteraless/exteraless)
 
-> [!WARNING]
-> Имя пакета пока остаётся `com.exteraless.app`. Из-за этого QuarkGram нельзя установить
-> одновременно с exteraless, а при другой подписи нужно сначала удалить старую версию.
-
 ---
 
 ## Сборка
@@ -89,7 +85,7 @@ QuarkGram развивается как форк [exteraless](https://github.com
    отладочным ключом Android.
 
 4. **Push-уведомления (необязательно).** Положите свой `TMessagesProj/google-services.json`
-   (Firebase, имя пакета `com.exteraless.app`).
+   (Firebase, имя пакета `com.quarkgram.app`).
 
 5. **Метаданные проекта (необязательно):**
 
@@ -187,10 +183,6 @@ QuarkGram is a standalone Telegram client for Android, developed as a fork of
 - **Appearance and chat settings**, icon packs, selectable app icon.
 - **Pill Stack** with quick actions and a **customizable side menu**.
 
-> [!WARNING]
-> The package name is still `com.exteraless.app`, so QuarkGram cannot be installed alongside
-> exteraless, and if the signature differs you must uninstall the old version first.
-
 ### Building
 
 1. Clone with submodules:
@@ -207,7 +199,7 @@ QuarkGram is a standalone Telegram client for Android, developed as a fork of
    build is signed with the Android debug key.
 
 4. Optional push notifications: replace `TMessagesProj/google-services.json` with your own
-   Firebase config for `com.exteraless.app`.
+   Firebase config for `com.quarkgram.app`.
 
 5. Build with `./gradlew :TMessagesProj:assembleDebug` or from Android Studio.
 

@@ -374,7 +374,8 @@ public class AndroidUtil {
     }
 
     public static boolean shouldEnableCrashlytics() {
-        return !BuildConfig.DEBUG
-                && app.exteraless.general.GeneralConfig.crashReports();
+        // QuarkGram: google-services.json всё ещё указывает на Firebase-проект exteraless,
+        // поэтому отчёты о падениях никуда не отправляем, пока не будет своего проекта.
+        return false;
     }
 }
